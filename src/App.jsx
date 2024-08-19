@@ -7,7 +7,16 @@ import  './App.css'
 function App() {
   return (
     <> 
-    <InputBox />
+    <div 
+    className="w-full h-screen flex  justify-center items-center flex-col bg-cover bg-no-repeat
+  bg-[url('./src/assets/currency-bitcoin-money-wallpaper.jpg')]
+    "
+  
+    >
+    <InputBox  label="From"/>
+    <InputBox label="To" className="" />
+
+    </div>
     </>
 
   )

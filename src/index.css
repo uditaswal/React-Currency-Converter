@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+  /* Hide the spinner in Chrome, Safari, Edge, Opera */
+  .custom-input::-webkit-outer-spin-button,
+  .custom-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Hide the spinner in Firefox */
+  .custom-input[type='number'] {
+    -moz-appearance: textfield;
+  }
+

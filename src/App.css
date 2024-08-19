@@ -6,12 +6,3 @@ button{
 
     cursor: pointer;
 }
-
-body{
-background-image: url('./assets/currency-bitcoin-money-wallpaper.jpg') ;
-height: 100vh;
-background-size: cover; 
-background-repeat: no-repeat;
-background-position: center; 
-
-}
