@@ -1,7 +1,7 @@
 import React, { useId } from "react";
 import "../index.css";
 
-function InputBox({
+const InputBox = React.memo(function InputBox({
   label,
   amount,
   onAmountChange,
@@ -11,6 +11,7 @@ function InputBox({
   amountDisable = false,
   currencyDisable = false,
   className = "",
+  isautoFocus = false,
 }) {
   const amountInputId = useId();
 
@@ -31,8 +32,10 @@ function InputBox({
             className="focus:outline-none focus:border-0 focus custom-input w-full bg-transparent py-1.5"
             type="number"
             name=""
-            // min="0"
             placeholder="0"
+            autoFocus={isautoFocus}
+            // min="0"
+          
             id={amountInputId}
             value={amount}
             onChange={(e) =>
@@ -70,6 +73,6 @@ function InputBox({
       </div>
     </>
   );
-}
+})
 
 export default InputBox;
